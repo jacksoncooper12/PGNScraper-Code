@@ -60,7 +60,7 @@ namespace PGNScraper
                                     {
                                         var moveCount = int.Parse(possiblePly.Remove(possiblePly.IndexOf('.')));
                                         var plyCount = moveCount * 2;
-                                        pgn = string.Format("[PlyCount \"{0}\"]{1}", plyCount, pgn);
+                                        pgn = string.Format("[PlyCount \"{0}\"]\r\n{1}", plyCount, pgn);
                                         break;
                                     }
                                 }
