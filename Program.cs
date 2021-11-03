@@ -34,6 +34,7 @@ namespace PGNScraper
             {
                 plycounts.Add(string.Format("{0}{1}", i.ToString(), "..."));
             }
+
             var stringResponse = await response.Content.ReadAsStringAsync();
             JObject jObj = JObject.Parse(stringResponse);
             if (jObj.ToString().Contains("archives"))
